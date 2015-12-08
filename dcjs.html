@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.min.css"/>
+  </head>
+  <body>
+    <div id='timeline'>
+       <a class='reset'
+          href='javascript:myChart.filterAll();dc.redrawAll();'
+          style='visibility: hidden;'>reset</a>
+    </div>
+
+    <div id='datatable'>
+       <a class='reset'
+          href='javascript:myChart.filterAll();dc.redrawAll();'
+          style='visibility: hidden;'>reset</a>
+    </div>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/crossfilter.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.min.js"></script>
+
+    <script type="text/javascript">
+      // var dataCount = dc.dataCount('#timeline');
+      // var dataTable = dc.dataTable('#datatable');
+      console.log('Reading data');
+
+      d3.csv('data/ndx.csv', function (data) {
+        // Since its a csv file we need to format the data a bit.
+        var dateFormat = d3.time.format('%m/%d/%Y');
+        var numberFormat = d3.format('.2f');
+        data.forEach(function (d) {
+          d.dd = dateFormat.parse(d.date);
+            d.month = d3.time.month(d.dd); // pre-calculate month for better performance
+            d.close = +d.close; // coerce to number
+            d.open = +d.open;
+        });
+      });
+
+      // dc.renderAll();
+
+
+        //   nasdaqTable  dc.dataTable('.dc-data-table', 'chartGroup') 
+        // .dimension(dateDimension)
+
+
+    </script>
+
+
+
+
+  </body>
+</html>
