@@ -1,5 +1,7 @@
 README.md
 
+[Kevyitä lähtöjä -johdanto](https://www.slideshare.net/jukkahuhtamaki/kevyit-lhtj-johdanto)
+
 ## The first visualization widget: Highcharts ##
 
 Let's start with a review of existing dashboards. Social media analytics is a prime example of a business domain in which web-based dashboards are the standard approach:
