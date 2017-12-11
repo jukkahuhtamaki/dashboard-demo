@@ -7,6 +7,12 @@ Let's start with a review of existing dashboards. Social media analytics is a pr
 * Meltwater: http://www.meltwater.com/fi/products/
 * Pulsar: http://pulsarplatform.com/
 
+### Benchmark: creating a visualization with Tableau Public
+
+* WYSIWYG tools exist for creating visualizations
+* Examples include Tableau and Microsoft PowerBI
+* What do consider to be key issues in developing visualizations with these kinds of tools?
+
 ### Implementing the first visualization ###
 
 * Basic line chart: [Highcharts](http://www.highcharts.com/demo/line-basic)
@@ -16,6 +22,17 @@ Let's start with a review of existing dashboards. Social media analytics is a pr
 Protip before we begin: you can start up our own local HTTP server with Python:
 
 	python -m SimpleHTTPServer 8080 &
+
+### Make the visualization dynamic
+
+* Create a separate JSON file for visualization data
+* Utilize jQuery to read the data from a file when the visualization is opened
+
+### Integrate the visualization to a Node.js application
+
+* How to serve JSON in a dynamic way by the Node.js application?
+* How to integrate Highcharts to application that uses Jade template engine?
+* How to use Hightcharts in Vue.js-based applications?
 
 ### Dashboard project ingredients ###
 
