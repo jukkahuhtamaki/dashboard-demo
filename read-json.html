@@ -1,0 +1,11 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+$.ajax({
+  url: "data.json",
+  cache: false
+}).done(function( data ) {
+  console.log('Data fetched... ');
+  console.log(data);
+});
+</script>
