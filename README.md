@@ -69,3 +69,7 @@ DC.js introduces a particularly expressive way to implement dashboards in JS:
 Online manual is available for implementing your first dashboard: https://dc-js.github.io/dc.js/
 
 The implementation is non-trivial, yet manageable with some knowledge on JS and the basics of web development.
+
+### Telling stories with data ###
+
+For insights on the ways to tell complelling and insightful stories with data, spending an hour with Hans Rosling's talk [A Fact-Based World View Requires Open Data, InfoViz & More](https://www.youtube.com/watch?v=2HAirZQtl9s) at OKFestival 2012 is a great investment.
