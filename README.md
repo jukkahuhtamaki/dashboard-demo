@@ -1,6 +1,6 @@
 README.md
 
-[Kevyitä lähtöjä -johdanto](https://www.slideshare.net/jukkahuhtamaki/kevyit-lhtj-johdanto)
+[Kevyitä lähtöjä -johdanto](https://www.slideshare.net/jukkahuhtamaki/kevyit-lhtj-dataanalytiikkaan-edutech-pilviasiantuntija-2018)
 
 ## The first visualization widget: Highcharts ##
 
