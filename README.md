@@ -25,6 +25,10 @@ Protip before we begin: you can start up our own local HTTP server with Python:
 
 	python -m SimpleHTTPServer 8080 &
 
+Or, in Python3, simply:
+
+python3 -m http.server 8080 &
+
 ### Make the visualization dynamic
 
 * Create a separate JSON file for visualization data
@@ -56,7 +60,7 @@ Dashboards are a way to implement interactive visual analytics with web technolo
 
 Heer and Shneiderman (2012) give an insightful overview of features and functionalities related to interactive visual analytics: http://dl.acm.org/citation.cfm?id=2133821
 
-Linking and brushing is one of the key features enabling exploration. Referrring to Becker and Cleveland (1987), Heer and Shneiderman (2012) note: "Brushing and linking is the process of selecting (brushing) items in one display to highlight (or hide) corresponding data in the other views." 
+Linking and brushing is one of the key features enabling exploration. Referrring to Becker and Cleveland (1987), Heer and Shneiderman (2012) note: "Brushing and linking is the process of selecting (brushing) items in one display to highlight (or hide) corresponding data in the other views."
 
 ### Interconnected views in JS ###
 
